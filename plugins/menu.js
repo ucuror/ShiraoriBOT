@@ -196,8 +196,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `${ucapan()} kak ${name}\n\n╭━━━━━━━━━━━━━━━━┈\n│       *SHIRAORI BOT*\n└┬────────────┈ ⳹\n┌┤\n││◦➛ *Nama :* *${name}*\n││◦➛ *Uang :* *${money}*\n││◦➛ *Exp :* *${exp}*\n││◦➛ *Limit :* *${limit}*\n││◦➛ *Level :* *${level}*\n││◦➛ *Rank :* *${role}*\n││◦➛ *Umur :* *${age}*\n│└────────────┈ ⳹\n│       *「 TIME 」*\n│◦➛ Hari: *${week}*\n│◦➛ Weton: *${weton}*\n│◦➛ Tanggal: *${date}*\n│◦➛ Waktu: *${time}* WITA\n│◦➛ Islam: *${dateIslamic}*\n│◦➛ Uptime: *${uptime}*\n├──────────────┈ ⳹\n│ Database ${rtotalreg} dari ${totalreg}\n│ Owner: Ilman\n│ Note: Jangan spam bot\n╰━━━━━━━━━━━━━━━━┈ ⳹`,
-          "description": "© SHIRAORI BOT",
+          "title": `${ucapan()} kak ${name}\n\n╭━━━━━━━━━━━━━━━━┈\n│       *ULI BOT*\n└┬────────────┈ ⳹\n┌┤\n││◦➛ *Nama :* *${name}*\n││◦➛ *Uang :* *${money}*\n││◦➛ *Exp :* *${exp}*\n││◦➛ *Limit :* *${limit}*\n││◦➛ *Level :* *${level}*\n││◦➛ *Rank :* *${role}*\n││◦➛ *Umur :* *${age}*\n│└────────────┈ ⳹\n│       *「 TIME 」*\n│◦➛ Hari: *${week}*\n│◦➛ Weton: *${weton}*\n│◦➛ Tanggal: *${date}*\n│◦➛ Waktu: *${time}* WITA\n│◦➛ Islam: *${dateIslamic}*\n│◦➛ Uptime: *${uptime}*\n├──────────────┈ ⳹\n│ Database ${rtotalreg} dari ${totalreg}\n│ Owner: Ilman\n│ Note: Jangan spam bot\n╰━━━━━━━━━━━━━━━━┈ ⳹`,
+          "description": "© Uli bot",
           "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",
           "sections": [
@@ -443,7 +443,7 @@ function clockString(ms) {
   return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
 }
 function ucapan() {
-  const time = moment.tz('Asia/Jakarta').format('HH')
+  const time = moment.tz('Asia/Bandung barat').format('HH')
   res = "Selamat dinihari"
   if (time >= 4) {
     res = "Selamat pagi"
