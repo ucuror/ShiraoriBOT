@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js --autoread",
-    "test": "node test.js"
+    "test": "node test.js",
+    "setup:owner": "node set-owner.js"
   },
   "repository": {
     "type": "git",
