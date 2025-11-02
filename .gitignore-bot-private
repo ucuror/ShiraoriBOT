@@ -1,0 +1,70 @@
+# ═══════════════════════════════════════════════════════
+# GITIGNORE UNTUK BOT WHATSAPP PRIVATE
+# ═══════════════════════════════════════════════════════
+
+# Session WhatsApp (PENTING: Jangan di-commit!)
+auth_info/
+*.data.json
+*.keys.json
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+bot.log
+
+# Backup files
+*.backup
+*.bak
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Database files (jika ada)
+*.db
+*.sqlite
+*.sqlite3
+
+# Media cache (jika ada)
+media/
+cache/
+
+# Config backup (opsional, tapi lebih baik tidak di-commit)
+config-private.js.backup
+
+# PM2 files
+.pm2/
+ecosystem.config.js
+
+# ═══════════════════════════════════════════════════════
+# CATATAN:
+# - auth_info/ berisi session WhatsApp, JANGAN PERNAH di-commit!
+# - Jika ingin share bot, pastikan auth_info/ tidak ter-upload
+# ═══════════════════════════════════════════════════════

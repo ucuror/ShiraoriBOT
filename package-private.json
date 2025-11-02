@@ -1,0 +1,28 @@
+{
+  "name": "bot-wa-private",
+  "version": "1.0.0",
+  "description": "Bot WhatsApp Private untuk penggunaan pribadi di Termux",
+  "main": "bot-wa-private.js",
+  "scripts": {
+    "start": "node bot-wa-private.js",
+    "test": "node bot-wa-private.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "private",
+    "termux",
+    "baileys"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.8",
+    "chalk": "^4.1.2",
+    "pino": "^8.19.0",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
